@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Navbar Page</title>
+       <link rel="stylesheet" href="nav.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+   </head>
+   <body>
+      <nav>
+         <ul>
+             <img src="/home/vishal/Documents/vishal/login-form-master/img/logo.jpg" alt="logo" style="width:40px;">
+            <li class="logo">Share</li>
+            
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Sign-Up</a></li>
+               <li><a href="#">Upload</a></li>
+            </div>
+            <li class="search-icon">
+               <input type="search" placeholder="Search">
+               <label class="icon">
+               <span class="fas fa-search"></span>
+               </label>
+            </li>
+         </ul>
+      </nav>
+      <script>
+         $('nav ul li.btn span').click(function(){
+           $('nav ul div.items').toggleClass("show");
+           $('nav ul li.btn span').toggleClass("show");
+         });
+      </script>
+   </body>
+</html>
